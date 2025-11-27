@@ -15,4 +15,46 @@
     <color name="textColor">#EEEEEE</color>
     <color name="textHintColor">#80EEEEEE</color>   <!-- 50% -->
 
+    <!-- New colors for features -->
+    <color name="cardBgColor">#2C2C3E</color>
+    <color name="cardBorderColor">#3E3E50</color>
+    <color name="positiveMessageBg">#1A4CAF50</color>
+    <color name="warningMessageBg">#1AFF9800</color>
+
+    <!-- Primary Colors -->
+    <color name="colorPrimary">#667EEA</color>
+    <color name="colorPrimaryDark">#764BA2</color>
+    <color name="colorAccent">#F093FB</color>
+
+    <!-- Background Colors -->
+    <color name="cardBGColor">#FFFFFF</color>
+
+    <!-- Text Colors -->
+    <color name="textColorLight">#718096</color>
+    <color name="textWhite">#FFFFFF</color>
+
+    <!-- Gradient Colors -->
+    <color name="gradientStart">#667EEA</color>
+    <color name="gradientCenter">#764BA2</color>
+    <color name="gradientEnd">#F093FB</color>
+
+    <!-- Temperature Colors -->
+    <color name="tempCold">#4299E1</color>
+    <color name="tempHot">#F56565</color>
+
+    <!-- Weather Detail Colors -->
+    <color name="pressureColor">#667EEA</color>
+    <color name="windColor">#48BB78</color>
+    <color name="humidityColor">#4299E1</color>
+
+    <!-- UI Element Colors -->
+    <color name="dividerColor">#E2E8F0</color>
+    <color name="shadowColor">#1A202C</color>
+    <color name="overlayColor">#80000000</color>
+
+    <!-- Status Colors -->
+    <color name="successColor">#48BB78</color>
+    <color name="warningColor">#ECC94B</color>
+    <color name="errorColor">#F56565</color>
+    <color name="infoColor">#4299E1</color>
 </resources>

@@ -3,21 +3,53 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/mainBGColor"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg_splash"
     tools:context=".SplashScreen">
 
+    <!-- Lottie Animation -->
     <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/splash_animation"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_300sdp"
         app:lottie_rawRes="@raw/cloud_cycle_lottie"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/app_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:lottie_autoPlay="true"
-        app:lottie_loop="true"
-        tools:ignore="MissingConstraints" />
+        app:lottie_loop="true" />
 
+    <!-- App Name -->
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weather Forecast"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"
+        android:letterSpacing="0.02"
+        app:layout_constraintBottom_toTopOf="@id/app_tagline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/splash_animation"
+        android:layout_marginBottom="8dp" />
+
+    <!-- App Tagline -->
+    <TextView
+        android:id="@+id/app_tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Always know what's ahead"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-light"
+        android:alpha="0.9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="60dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

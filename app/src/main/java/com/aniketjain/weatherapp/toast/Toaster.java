@@ -1,28 +1,14 @@
 package com.aniketjain.weatherapp.toast;
 
 import android.content.Context;
-
-import com.aniketjain.roastedtoast.Toasty;
-import com.aniketjain.weatherapp.R;
+import android.widget.Toast;
 
 public class Toaster {
     public static void successToast(Context context, String msg) {
-        Toasty.custom(
-                context,
-                msg,
-                R.drawable.ic_baseline_check_24,
-                "#454B54",
-                14,
-                "#EEEEEE");
+        Toast.makeText(context, msg, Toast.LENGTH_SHORT).show();
     }
 
     public static void errorToast(Context context, String msg) {
-        Toasty.custom(
-                context,
-                msg,
-                R.drawable.ic_baseline_error_outline_24,
-                "#454B54",
-                14,
-                "#EEEEEE");
+        Toast.makeText(context, msg, Toast.LENGTH_SHORT).show();
     }
 }
